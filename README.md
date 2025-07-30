@@ -1,1 +1,1 @@
-# pic32lab1
+# AVR LAB1
