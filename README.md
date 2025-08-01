@@ -16,7 +16,7 @@ En el siguiente enlace [--> Click](https://www.youtube.com/watch?v=hmUjBX4lj0o) 
   <img src="/avruno.png"></img>
 </p> <br />
 
-Programa base __main.c__ que destella el LED interno de la placa UNO y que se utilizara en todas las practicas de programacion de este repositorio.
+Programa base __main.c__ que destella el LED interno de la placa UNO y se utilizara en todas las practicas de este repositorio.
 
 ```c
 #include <xc.h>
