@@ -1,4 +1,4 @@
-# MCU AVR LAB1 pablinza@me.com
+# AVRMCU LAB1 pablinza@me.com
 Programacion del Microcontrolador ATMega328 en lenguaje C con el compilador oficial de Microchip __XC8__ <br />
 Repositorio con las practicas desarrolladas en la asignatura Microcontroladores, Carrera de Ingenieria Electronica <br />
 El software __MPLABX__ disponible en la pagina del fabricante Microchip [ --> Click](https://ww1.microchip.com/downloads/aemDocuments/documents/DEV/ProductDocuments/SoftwareTools/MPLABX-v6.20-windows-installer.exe?authuser=0) <br />
