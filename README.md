@@ -17,6 +17,15 @@ En el siguiente enlace [--> Click](https://www.youtube.com/watch?v=hmUjBX4lj0o) 
 </p> <br />
 
 ```c
+#include <xc.h>
+volatile uint8_t tickms;
+void taskLED(void);
+void setupMCU(void);
+void __interrupt(TIMER0_OVF_vect_num) t0_isr(void) //Interrupcion
+{
+    TCNT0 += 5; //Actualiza el contador
+    tickms = 1; //Activa bandera
+}
 int main(void) //Programa principal
 {
     setupMCU(); //Configura el MCU
@@ -29,6 +38,27 @@ int main(void) //Programa principal
         }
     }
     return 0;
+}
+void taskLED(void) //Ejecucion cada 1ms
+{
+    static uint16_t cnt = 0;
+    if(cnt++ > 999)
+    {
+        cnt = 0;
+        PORTB |= _BV(PB5); //Nivel alto en PB5
+    }
+    if(cnt == 100) PORTB &= ~_BV(PB5); //Nivel bajo en PB5
+}
+void setupMCU(void)
+{
+    DIDR0 = 0x3F; //Desactiva canales ADC5:0
+    DDRB |= _BV(PB5); //PB5 salida led 13(UNO) 
+    PORTB &= ~_BV(PB5); //PB5 en nivel bajo
+    /* CONFIGURACION TIMER0 1MS Fosc=16MHz */
+    TCCR0A = 0x00; //Modo normal
+	TCCR0B = 0x03;//Ajuste Divisor CS=1:64 
+	TCNT0 = 5; //TCNT0=255-(0.001*Fosc/64)=05
+	TIMSK0 |= _BV(TOIE0); //Activa interrupcion del T0  
 }
 ```
 
