@@ -64,10 +64,10 @@ void setupMCU(void)
 }
 ```
 
-El siguiente enlace (https://pcz1.blogspot.com/2025/06/introduccion-tarjeta-fpga-tangnano-9k.html) a mi blog brinda una descripcion resumida de esta tarjeta. Si realmente quieres entrar a fondo con el desarrollo de circuitos digitales te recomiendo que revisese los documentos del fabricante que son la mejor referencia de uso y resolucion de posibles errores (errdata). <br />
-Cada carpeta del proyecto Gowin tiene el nombre precedido por el numero de actividad, en su estructura encontrara los modulos descriptivos Verilog con extension .v en la subcarpeta /src, mientras que el firmware .fs generado durante la sintesis se encuentra en la subcarpeta impl/pnr. <br />
+El siguiente enlace (http://pcz1.blogspot.com/2022/03/proteccion-de-la-memoria-atmega.html) a mi blog describo el uso de AVRDUDE para la carga del firmware a la tarjeta UNO. Si realmente quieres entrar a fondo con la programacion de este Microcontrolador te recomiendo que revisese los documentos del fabricante que son la mejor referencia de uso y resolucion de posibles errores (errdata). <br />
+Cada proyecto MPLABX es una carpeta con extension __.X__ que tiene el nombre precedido por el numero de actividad <br />
 
-## Lista de circuitos digitales implementados an la tangnano9k
+## Lista de practicas de programacion implementados en la Placa UNO (ATMega328)
 
 
 Autor: Pablo Zarate, puedes contactarme a pablinza@me.com / pablinzte@gmail.com.  <br />
