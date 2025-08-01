@@ -1,11 +1,12 @@
 # MCU AVR LAB1 pablinza@me.com
 Programacion del Microcontrolador ATMega328 en lenguaje C con el compilador oficial de Microchip __XC8__ <br />
-Repositorio con las practicas desarroladas durante la asignatura Microcontroladores de Ingenieria Electronica <br />
+Repositorio con las practicas desarrolladas en la asignatura Microcontroladores, Carrera de Ingenieria Electronica <br />
 El software __MPLABX__ disponible en la pagina del fabricante Microchip [ --> Click](https://ww1.microchip.com/downloads/aemDocuments/documents/DEV/ProductDocuments/SoftwareTools/MPLABX-v6.20-windows-installer.exe?authuser=0) <br />
 El compilador __XC8__ puedes descargalo utilizando este enlace [ --> Click](https://ww1.microchip.com/downloads/aemDocuments/documents/DEV/ProductDocuments/SoftwareTools/xc8-v2.50-full-install-windows-x64-installer.exe?authuser=0) <br />
-Para cargar el firmware al microcontrolador se necesita un programador ISP(AVRDUDE,AVR-ISP). Esto no sera necesarioa si utilizamos una tarjeta Arduino UNO o NANO gracias que estas poseen un bootloader precargado para la actualizacion del firmware desde el skecth de __Arduino__ [ -->Click](https://www.arduino.cc/en/software/) <br />
+Para cargar el firmware al microcontrolador se necesita un programador ISP(MK500,AVR-ISP,etc). Pero, esto no sera necesarioa si utilizamos una tarjeta Arduino UNO o NANO gracias que el MCU de estas placas  poseen un bootloader precargado para la actualizacion del firmware desde el skecth __Arduino__ [ -->Click](https://www.arduino.cc/en/software/) <br />
 
-Cada carpeta del proyecto MPLABX tiene el nombre precedido por el numero de actividad y en su estructura encontrara el programa principal con el nombre __main.c__ y librerias de uso local, una vez compilado el codigo se genera el firmware archivo __.hex__ en la carpeta dist/default/production. <br />
+Cada carpeta del proyecto MPLABX tiene el nombre precedido por el numero de actividad y en su estructura encontrara el programa principal con el nombre __main.c__ y librerias de uso local, una vez compilado el codigo, se generara el archivo __.hex__ con el firmware correspondiente en la carpeta dist/default/production. Utilizaremos una herramienta de carga como AVRDUDE [-->Click](https://github.com/avrdudes/avrdude) para transfererir este __.hex__ a la memoria de programa de Microcontrolador ATMega328 <br />
+Para instalar AVRDUDE en linux (Debian o Ubuntu) bastara con ejecutar el siguiente comando: __#apt-get install avrdude__ en Windows debes seguir las instrucciones del archivo ZIP descargado, como alternativa existe tambien una herramienta con interfaz grafica llamada AVRDUDESS [-->Click](https://github.com/ZakKemble/AVRDUDESS) la cual no he utilizado ya que me siento a gusto con la linea de comandos de AVRDUDE, pero si no es lo tuyo, prueba esta alternativa y me comentar que tal esta. :) <br />
 
 
 ## Configuracion del Proyecto Base
