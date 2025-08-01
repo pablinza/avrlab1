@@ -16,7 +16,7 @@ En el siguiente enlace [--> Click](https://www.youtube.com/watch?v=hmUjBX4lj0o) 
   <img src="/avruno.png"></img>
 </p> <br />
 
-Programa base __main.c para las practicas de programacion
+Programa base __main.c__ para las practicas de programacion
 
 ```c
 #include <xc.h>
