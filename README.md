@@ -67,7 +67,7 @@ void setupMCU(void)
 El siguiente enlace (http://pcz1.blogspot.com/2022/03/proteccion-de-la-memoria-atmega.html) a mi blog describo el uso de AVRDUDE para la carga del firmware a la tarjeta UNO. Si realmente quieres entrar a fondo con la programacion de este Microcontrolador te recomiendo que revisese los documentos del fabricante que son la mejor referencia de uso y resolucion de posibles errores (errdata). <br />
 Cada proyecto MPLABX es una carpeta con extension __.X__ que tiene el nombre precedido por el numero de actividad <br />
 
-## Lista de practicas de programacion implementados en la Placa UNO (ATMega328)
+## Lista de practicas de programacion Placa UNO (ATMega328)
 
 
 Autor: Pablo Zarate, puedes contactarme a pablinza@me.com / pablinzte@gmail.com.  <br />
