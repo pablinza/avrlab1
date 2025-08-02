@@ -53,14 +53,15 @@ void taskLED(void) //Ejecucion cada 1ms
 }
 void setupMCU(void)
 {
-  DIDR0 = 0x3F; //Desactiva canales ADC5:0
+  DIDR0 = 0x3F;     //Desactiva canales ADC5:0
   DDRB |= _BV(PB5); //PB5 salida led 13(UNO) 
-  PORTB &= ~_BV(PB5); //PB5 en nivel bajo
+  PORTB &= ~_BV(PB5);  //PB5 en nivel bajo
   /* CONFIGURACION TIMER0 1MS Fosc=16MHz */
   TCCR0A = 0x00; //Modo normal
-  TCCR0B = 0x03;//Ajuste Divisor CS=1:64 
+  TCCR0B = 0x03; //Ajuste Divisor CS=1:64 
   TCNT0 = 5; //TCNT0=255-(0.001*Fosc/64)=05
-  TIMSK0 |= _BV(TOIE0); //Activa interrupcion del T0  
+  TIMSK0 |= _BV(TOIE0); //Activa interrupcion del T0
+  SREG = _BV(SREG_I);   //Habilitador Global de interrupcion  
 }
 ```
 
