@@ -71,9 +71,9 @@ Cada proyecto MPLABX es una carpeta con extension __.X__ que tiene el nombre pre
 ## Lista de practicas de programacion Placa UNO (ATMega328)
 ### - P01 - Destello de Luz Secuencial   [APPBASE]
   <p align="center">
-  <img src="/images/ap1schm.png"></img>
-</p>
-El programa destella los leds conectados el PIC con frecuencia y ciclo de trabajo diferente, se hace uso del temporizador TMR0 para realizar las tareas de forma concurrente sin bloquear le ejecucion del programa principal. EL modulo TMR0 esta configurado para temporizar intervalos de 1ms. Para descripcion(https://youtu.be/rYyD9MK57Po)
+  <img src="/images/ap1schm.png"></img> </p>
+
+El programa destella los leds conectados al __MCU__ con frecuencia y ciclo de trabajo diferente, donde se utiliza la interrupcion del temporizador T0 de 8-bit configurado a 1ms. La rutina de interrupcion ISR para el temporizador activa una bandera __tickms__ que servira para la ejecucion de tareas de forma concurrente dentro del programa principal. Se muestra un video que resume la implementacion de este ejercicio -> (https://youtu.be/rYyD9MK57Po)
 
 ### - P02 - Control de Trafico Vehicular [APTRAFFIC]
 <p align="center">
