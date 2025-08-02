@@ -91,13 +91,15 @@ En esta practica se elabora un programa para realizar la lectura de los canales 
 <p align="center">
   <img src="/images/ap4schm.png"></img>
 </p>
-Se elabora un programa que muestra como controlar la posicion de un servomotor SG90, donde el control de movimiento o posicion del eje servomotor se realiza con escala en porcentaje de 0% a 100%. Ademas se realiza la lectura de un sensor de distancia por ultrasonido SR04 para detectar la presencia de un objeto y desplazar una barra conectada el eje del sermovotor. El programa hace uso de la interrupcion del temporizador T0 para la ejecucion de tareas concurrentes dentro del programa principal y el temporizador T2 para la modulacion PWM del servomotor. Se muestra un video que resume la implementacion de este ejercicio -> (https://youtu.be/369__Zxra0M)
+
+Se elabora un programa que muestra como controlar la posicion de un servomotor __SG90__, donde el control de movimiento o posicion del eje servomotor se realiza con escala en porcentaje de 0% a 100%. Ademas se realiza la lectura de un sensor de distancia por ultrasonido __SR04__ para detectar la presencia de un objeto y desplazar una barra conectada el eje del sermovotor. El programa hace uso de la interrupcion del temporizador __T0__ para la ejecucion de tareas concurrentes dentro del programa principal y el temporizador __T2__ para la modulacion PWM del servomotor. Se muestra un video que resume la implementacion de este ejercicio -> (https://youtu.be/369__Zxra0M)
 
 ### - P05 - Control de Acceso Autorizado [APKEYPAS]
 <p align="center">
   <img src="/images/ap5schm.png"></img>
 </p>
-Programa basico que muestra como leer desde un teclado matricial 3x4 una contraseña de cuatro digitos y mostrar su validacion en una pantalla tipo LCD 16x2, durante el proceso la pantalla muestra el ingreso de los datos y un mensaje para indicar que la contraseña fue aceptada o rechazada, despues de tres intentos fallidos el acceso se bloqueara hasta reiniciar el programa. Se muestra un video que resume la implementacion de este ejercicio -> (https://youtu.be/mYJeusZr0Jg)
+
+Programa que muestra el uso de un teclado matricial 3x4 para la lectura de una contraseña de cuatro digitos y proceder con su validacion, mostrando el resultado en una pantalla LCD 16x2. Durante el proceso la pantalla muestra el ingreso de los datos y un mensaje indicando si la contraseña fue aceptada o rechazada, permitiendo como maximo tres intentos antes de bloquear el acceso, que unicamente se restaura reiniciando el programa. Se utiliza el __T0__ como base de tiempo para la ejecucion de tareas concurrentes. Se muestra un video que resume la implementacion de este ejercicio -> (https://youtu.be/mYJeusZr0Jg)
 
  <br />
 Autor: Pablo Zarate, puedes contactarme a pablinza@me.com / pablinzte@gmail.com.  <br />
