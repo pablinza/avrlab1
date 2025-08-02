@@ -73,31 +73,31 @@ Cada proyecto MPLABX es una carpeta con extension __.X__ que tiene el nombre pre
   <p align="center">
   <img src="/images/ap1schm.png"></img> </p>
 
-El programa destella los leds conectados al __MCU__ con frecuencia y ciclo de trabajo diferente, donde se utiliza la interrupcion del temporizador T0 de 8-bit configurado a 1ms. La rutina de interrupcion ISR para el temporizador activa una bandera __tickms__ que servira para la ejecucion de tareas de forma concurrente dentro del programa principal. Se muestra un video que resume la implementacion de este ejercicio -> (https://youtu.be/rYyD9MK57Po)
+El programa destella los leds conectados al __MCU__ con frecuencia y ciclo de trabajo diferente, donde se utiliza la interrupcion del temporizador T0 de 8-bit configurado a 1ms. La rutina de interrupcion ISR para el temporizador activa la bandera __[tickms]__ que servira para la ejecucion concurrente de dos tareas dentro del bucle __while__ del programa principal. Se muestra un video que resume la implementacion de este ejercicio -> (https://youtu.be/rYyD9MK57Po)
 
 ### - P02 - Control de Trafico Vehicular [APTRAFFIC]
 <p align="center">
-  <img src="/images/ap2schm.png"></img>
-</p>
-El programa muestra como implementar un contrlador de trafico para dos fases, utilizando como base de tiempo el temporizador TMR0. Ademas se cuenta con una entrada de alerta SW1 que en caso de fall obliga al controlador a ingreear al modo de mantenimiento en el cual las luces amarillas destellaran. Para descripcion(https://youtu.be/hlDj-E___kY)
+  <img src="/images/ap2schm.png"></img> </p>
+
+El programa muestra un ejemplo de como implementar un controlador de trafico para dos fases (interseccion de calles), utilizando la interrupcion del temporizador __T0__ como base de tiempo para la ejecucion concurrente de tareas en el programa principal. Ademas se adiciona una entrada de alerta __SW1__ que se activa en caso de falla ocasionando que el controlador ingrese en modo de mantenimiento. En el modo mantenimiento las luces amarillas destellaran de manera intermitende. Se muestra un video que resume la implementacion de este ejercicio -> (https://youtu.be/hlDj-E___kY)
 
 ### - P03 - Monitor de Datos Serial ADC  [APMONITOR]
 <p align="center">
-  <img src="/images/ap3schm.png"></img>
-</p>
-Este programa realiza la lectura de los canales analogicos AN0 y AN1, y asi mismo lee el estado del pulsador SW1 de manera concurrente, ademas se enviara por el puerto serial UART la magnitud de las conversiones y el estado del pulsador, en la practica se utilizara un joystick de doble eje y una interfaz graficas para visualizar la informaicon. Para descripcion(https://youtu.be/-FM--FO0nE8)
+  <img src="/images/ap3schm.png"></img> </p>
+  
+En esta practica se elabora un programa para realizar la lectura de los canales analogicos __AN0__ y __AN1__, y la lectura del estado que tiene el pulsador __SW1__. Las tareas se ejecutan de forma concurrente en el programa principal utilizando como base de tiempo la interrupcion del temporizador __T0__. Adicionalmente se envia por el puerto serie UART un mensaje con el resultado de la conversion ADC y estado del pulsador. La implementacion utiliza como fuente ADC un joystick de doble eje y como salida una interfaz con graficas en PC. Se muestra un video que resume la implementacion de este ejercicio -> (https://youtu.be/-FM--FO0nE8)
 
 ### - P04 - Controlador para Servomotor  [APSERVO]
 <p align="center">
   <img src="/images/ap4schm.png"></img>
 </p>
-El programa permite controladr la posicion de un servomotor del tipo SG90, el control se lleva a cabo en porcentaje 0 al 100% del movimiento, Ademas se efectuara la lectura de un sensor de distancia por ultrasonido para detectar la presencia de un objeto y desplazar una barra utilizando el sermovotor. Para descripcion(https://youtu.be/369__Zxra0M)
+Se elabora un programa que muestra como controlar la posicion de un servomotor SG90, donde el control de movimiento o posicion del eje servomotor se realiza con escala en porcentaje de 0% a 100%. Ademas se realiza la lectura de un sensor de distancia por ultrasonido SR04 para detectar la presencia de un objeto y desplazar una barra conectada el eje del sermovotor. El programa hace uso de la interrupcion del temporizador T0 para la ejecucion de tareas concurrentes dentro del programa principal y el temporizador T2 para la modulacion PWM del servomotor. Se muestra un video que resume la implementacion de este ejercicio -> (https://youtu.be/369__Zxra0M)
 
 ### - P05 - Control de Acceso Autorizado [APKEYPAS]
 <p align="center">
   <img src="/images/ap5schm.png"></img>
 </p>
-Programa basico que muestra como leer desde un teclado matricial 3x4 una contraseña de cuatro digitos y mostrar su validacion en una pantalla tipo LCD 16x2, durante el proceso la pantalla muestra el ingreso de los datos y un mensaje para indicar que la contraseña fue aceptada o rechazada, despues de tres intentos fallidos el acceso se bloqueara hasta reiniciar el programa. Para descripcion(https://youtu.be/mYJeusZr0Jg)
+Programa basico que muestra como leer desde un teclado matricial 3x4 una contraseña de cuatro digitos y mostrar su validacion en una pantalla tipo LCD 16x2, durante el proceso la pantalla muestra el ingreso de los datos y un mensaje para indicar que la contraseña fue aceptada o rechazada, despues de tres intentos fallidos el acceso se bloqueara hasta reiniciar el programa. Se muestra un video que resume la implementacion de este ejercicio -> (https://youtu.be/mYJeusZr0Jg)
 
  <br />
 Autor: Pablo Zarate, puedes contactarme a pablinza@me.com / pablinzte@gmail.com.  <br />
