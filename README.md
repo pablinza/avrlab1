@@ -85,7 +85,7 @@ El programa muestra un ejemplo de como implementar un controlador de trafico par
 <p align="center">
   <img src="/images/ap3schm.png"></img> </p>
   
-En esta practica se elabora un programa para realizar la lectura de los canales analogicos __AN0__ y __AN1__, y la lectura del estado que tiene el pulsador __SW1__. Las tareas se ejecutan de forma concurrente en el programa principal utilizando como base de tiempo la interrupcion del temporizador __T0__. Adicionalmente se envia por el puerto serie UART un mensaje con el resultado de la conversion ADC y estado del pulsador. La implementacion utiliza como fuente ADC un joystick de doble eje y como salida una interfaz con graficas en PC. Se muestra un video que resume la implementacion de este ejercicio -> (https://youtu.be/-FM--FO0nE8)
+En esta practica se elabora un programa para realizar la lectura de los canales analogicos __ADC0__ y __ADC1__, y la lectura del estado que tiene el pulsador __SW1__. Las tareas se ejecutan de forma concurrente en el programa principal utilizando como base de tiempo la interrupcion del temporizador __T0__. Adicionalmente se envia por el puerto serie UART un mensaje con el resultado de la conversion ADC y estado del pulsador. La implementacion utiliza como fuente ADC un joystick de doble eje y como salida una interfaz con graficas en PC. Se muestra un video que resume la implementacion de este ejercicio -> (https://youtu.be/-FM--FO0nE8)
 
 ### - P04 - Controlador para Servomotor  [APSERVO]
 <p align="center">
