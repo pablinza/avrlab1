@@ -11,7 +11,7 @@ En el caso de Windows debes seguir las instrucciones del archivo ZIP descargado,
 
 
 ## Configuracion del Proyecto Base
-En el siguiente enlace [--> Click](https://www.youtube.com/watch?v=hmUjBX4lj0o) dejo un video que muestra la instalacion de MPLABX + XC8 y la creacion de un proyecto base para el microcontrolador ATMega328. La implementacion de los circuitos en cada ejemplo, sera con una tarjeta UNO considerando el mapa de pines del esquema inferior, te recomiendo antes puedas mirar este video que explica como se realizan la configuracion de los registros especificos de este microcontrolador [--> Cick Aqui]  
+En el siguiente enlace [--> Click](https://youtu.be/yIyk5peV_0U) dejo un video que muestra la instalacion de MPLABX + XC8 y la creacion de un proyecto base para el microcontrolador ATMega328. La implementacion de los circuitos en cada ejemplo, sera con una tarjeta UNO considerando el mapa de pines del esquema inferior, te recomiendo antes puedas mirar este video que explica como se realizan la configuracion de los registros especificos de este microcontrolador [--> Cick Aqui]  
 <p align="center">
   <img src="/avruno.png"></img>
 </p> <br />
