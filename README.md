@@ -72,13 +72,13 @@ Cada proyecto MPLABX es una carpeta con extension __.X__ que tiene el nombre pre
   <p align="center">
   <img src="/images/ap1schm.png"></img> </p>
 
-El programa destella los leds conectados al __MCU__ con frecuencia y ciclo de trabajo diferente, donde se utiliza la interrupcion del temporizador T0 de 8-bit configurado a 1ms. La rutina de interrupcion ISR para el temporizador activa la bandera __[tickms]__ que servira para la ejecucion concurrente de dos tareas dentro del bucle __while__ del programa principal. Se muestra un video que resume la implementacion de este ejercicio ->
+El programa destella los leds conectados al __MCU__ con frecuencia y ciclo de trabajo diferente, donde se utiliza la interrupcion del temporizador T0 de 8-bit configurado a 1ms. La rutina de interrupcion ISR para el temporizador activa la bandera __[tickms]__ que servira para la ejecucion concurrente de dos tareas dentro del bucle __while__ del programa principal. Se muestra un video que resume la implementacion de este ejercicio -> (https://youtu.be/NJdLbTnSewY)
 
 ### - P02 - Control de Trafico Vehicular [APTRAFFIC]
 <p align="center">
   <img src="/images/ap2schm.png"></img> </p>
 
-El programa muestra un ejemplo de como implementar un controlador de trafico para dos fases (interseccion de calles), utilizando la interrupcion del temporizador __T0__ como base de tiempo para la ejecucion concurrente de tareas en el programa principal. Ademas se adiciona una entrada de alerta __SW1__ que se activa en caso de falla ocasionando que el controlador ingrese en modo de mantenimiento. En el modo mantenimiento las luces amarillas destellaran de manera intermitente. Se muestra un video que resume la implementacion de este ejercicio ->
+El programa muestra un ejemplo de como implementar un controlador de trafico para dos fases (interseccion de calles), utilizando la interrupcion del temporizador __T0__ como base de tiempo para la ejecucion concurrente de tareas en el programa principal. Ademas se adiciona una entrada de alerta __SW1__ que se activa en caso de falla ocasionando que el controlador ingrese en modo de mantenimiento. En el modo mantenimiento las luces amarillas destellaran de manera intermitente. Se muestra un video que resume la implementacion de este ejercicio -> (https://youtu.be/Jv13aEqfWio)
 
 ### - P03 - Monitor de Datos Serial ADC  [APMONITOR]
 <p align="center">
