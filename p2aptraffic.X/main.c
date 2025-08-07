@@ -116,7 +116,6 @@ void taskLED(void) //Destello de LED1 1Hz al 20%
 }
 void setupMCU(void)
 {
-  DIDR0 = 0x3F;     //Desactiva canales ADC5:0
   DDRB |= _BV(PB5); //PB5 salida LED1 13(UNO) 
   PORTB |= _BV(PB0); //Activa pull-up PB0 pulsador SW1
   DDRD |= 0xFC; //salida luces PD7:PD2
