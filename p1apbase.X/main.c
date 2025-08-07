@@ -53,7 +53,6 @@ void taskLED2(void) //Destello de LED2 5Hz al 50%
 }
 void setupMCU(void)
 {
-  DIDR0 = 0x3F;     //Desactiva canales ADC5:0
   DDRB |= _BV(PB5); //PB5 salida LED1 13(UNO) 
   DDRD |= _BV(PD2); //PD2 salida LED2
   PORTB &= ~LED1pin;//LED1 apagado
