@@ -117,7 +117,6 @@ void taskLED(void) //Ejecucion cada 1ms
 }
 void setupMCU(void)
 {
-    DIDR0 = 0x3F;       //Desactiva canales ADC5:0
     DDRB |= _BV(PB5);   //PB5 salida led 13(UNO) 
     PORTB &= ~LED1pin;  //PB5 en nivel bajo
     PORTB|= _BV(PB0);   //Activa pull-up del PB0 
@@ -126,8 +125,8 @@ void setupMCU(void)
     ADMUX |= _BV(ADLAR); //Justificacion a la izquierda ADCH:ADCL
 	ADCSRA = 0x07; //Pre 1:128 16M/128 = 125Khz debe ser entre 50-200Khz
 	ADCSRA |= _BV(ADEN); //Habilita el modulo ADC
-	DIDR0 &= ~_BV(ADC0D); //Activa canal ADC0
-	DIDR0 &= ~_BV(ADC1D); //Activa canal ADC1
+	DIDR0 |= _BV(ADC0D); //Desactiva modo digital canal ADC0
+	DIDR0 |= _BV(ADC1D); //Desactiva modo digital canal ADC1
     /*CONFIGURACION UART 9600 Fosc=16MHz*/
 	UBRR0H = 0; //[Fosc/(16*BAUD)]-1
 	UBRR0L = 103;
