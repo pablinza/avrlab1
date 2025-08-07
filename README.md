@@ -78,7 +78,7 @@ El programa destella los leds conectados al __MCU__ con frecuencia y ciclo de tr
 <p align="center">
   <img src="/images/ap2schm.png"></img> </p>
 
-El programa muestra un ejemplo de como implementar un controlador de trafico para dos fases (interseccion de calles), utilizando la interrupcion del temporizador __T0__ como base de tiempo para la ejecucion concurrente de tareas en el programa principal. Ademas se adiciona una entrada de alerta __SW1__ que se activa en caso de falla ocasionando que el controlador ingrese en modo de mantenimiento. En el modo mantenimiento las luces amarillas destellaran de manera intermitende. Se muestra un video que resume la implementacion de este ejercicio ->
+El programa muestra un ejemplo de como implementar un controlador de trafico para dos fases (interseccion de calles), utilizando la interrupcion del temporizador __T0__ como base de tiempo para la ejecucion concurrente de tareas en el programa principal. Ademas se adiciona una entrada de alerta __SW1__ que se activa en caso de falla ocasionando que el controlador ingrese en modo de mantenimiento. En el modo mantenimiento las luces amarillas destellaran de manera intermitente. Se muestra un video que resume la implementacion de este ejercicio ->
 
 ### - P03 - Monitor de Datos Serial ADC  [APMONITOR]
 <p align="center">
