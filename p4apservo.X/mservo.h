@@ -1,22 +1,25 @@
 /* File:   mservo.h / mservo.c
  * Author: Pablo Zarate email:pablinza@me.com
- * Comments: 8-bit Timer Servo Implementation for AVR 
- * Designed for multiple servo controller with timer
- * 8-bit Timer module for 08us step is required for operation
- * #define MSVPORTx Port servo control <pos6><pos5><pos4><pos3><pos2><pos1>
- * #define MSVTRIS  Port servo direction configuration
+ * Comments: Libreria de control de servos para AVR
+ * Creado para el control de multiples servos con temporizador TC0 de 8-bit
+ * Se requiere configurar temporizador para pasos de 8uS
+ * #define MSVPORTx Registro de control Pines <pos7>....<pos3><pos2><pos1>
+ * #define MSVTRISx Registro de configuracion de Pines
  * Set MSV_t MSV declaration on main.c 
  * Set MSV.svxpos beetwen 0 (1ms pulse width) - 125(2ms pulse width) 
- * Revision history: 25.08 */
+ * Revision history: 25.08 
+ * 25.10 Se cambia definicion MSVTIME0 por MSVPOS0 
+ * 25.08 Optimizacion de codigo
+ */
 #ifndef  _XC_MSERVO_H
 #define  _XC_MSERVO_H
 /* USER PORT DEFINITION */
 #define MSVNUM 1      //Numero de servos a conectar, Maximo 8. 20ms/8 > 2.5ms.
-#define MSVPIN 0      //Indica el numero de pin indice 0-7
-#define MSVSLOT 250U  //Maximo desplazamiento 250 x 8us = 2ms 
-#define MSVTIME0 125U //Minimo desplazamiento 120 x 8us = 1ms 
-#define MSVPORT PORTC //Port servo control <pos6><pos5><pos4><pos3><pos2><pos1>
-#define MSVTRIS DDRC  //Port servo config mode
+#define MSVPIN 2      //Indica el numero de pin indice 0-7
+#define MSVSLOT 250U  //Maximo desplazamiento 250 x 8us = 2.0ms 
+#define MSVPOS0 188U  //Posicion central servo 188 x 8us = 1.5ms 
+#define MSVPORT PORTD //Port servo control <pos6><pos5><pos4><pos3><pos2><pos1>
+#define MSVTRIS DDRD  //Port servo config mode
 /* END USER PORT DEFINITIOS*/
 typedef struct
 {

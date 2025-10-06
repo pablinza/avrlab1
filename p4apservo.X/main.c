@@ -47,8 +47,8 @@ int main(void) //Programa principal
             {
                 distOK = 0;
                 printf("R:%u\r\n", distcnt);
-                if(distcnt < 3) MSV.sv1pos = 30;
-                else MSV.sv1pos = 90; 
+                if(distcnt < 3) MSV.sv1pos = 25; //Levanta
+                else MSV.sv1pos = 85; //Cierra
             }
         }
     }

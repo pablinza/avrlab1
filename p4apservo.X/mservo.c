@@ -1,13 +1,16 @@
 /* File:   mservo.h / mservo.c
  * Author: Pablo Zarate email:pablinza@me.com
- * Comments: 8-bit Timer Servo Implementation for AVR 
- * Designed for multiple servo controller with timer
- * 8-bit Timer module for 08us step is required for operation
- * #define MSVPORTx Port servo control <pos6><pos5><pos4><pos3><pos2><pos1>
- * #define MSVTRIS  Port servo direction configuration
+ * Comments: Libreria de control de servos para AVR
+ * Creado para el control de multiples servos con temporizador TC0 de 8-bit
+ * Se requiere configurar temporizador para pasos de 8uS
+ * #define MSVPORTx Registro de control Pines <pos7>....<pos3><pos2><pos1>
+ * #define MSVTRISx Registro de configuracion de Pines
  * Set MSV_t MSV declaration on main.c 
  * Set MSV.svxpos beetwen 0 (1ms pulse width) - 125(2ms pulse width) 
- * Revision history: 25.08 */
+ * Revision history: 25.08 
+ * 25.10 Se cambia definicion MSVTIME0 por MSVPOS0 
+ * 25.08 Optimizacion de codigo
+ */
 #include <xc.h>
 #include "mservo.h"
 extern MSV_t MSV;
@@ -45,7 +48,7 @@ uint8_t MSERVOHandler(void)
         else 
         {
             MSVPORT |= res; //Set pint to HIGH
-            timer = MSVTIME0 + (*svptr); //Set active pulse width
+            timer = 125u + (*svptr); //Set active pulse width
         }
     }
     return timer;
