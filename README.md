@@ -84,14 +84,14 @@ El programa muestra un ejemplo de como implementar un controlador de trafico par
 <p align="center">
   <img src="/images/ap3schm.png"></img> </p>
   
-En esta practica se elabora un programa para realizar la lectura de los canales analogicos __ADC0__ y __ADC1__, y la lectura del estado que tiene el pulsador __SW1__. Las tareas se ejecutan de forma concurrente en el programa principal utilizando como base de tiempo la interrupcion del temporizador __T0__. Adicionalmente se envia por el puerto serie UART un mensaje con el resultado de la conversion ADC y estado del pulsador. La implementacion utiliza como fuente ADC un joystick de doble eje y como salida una interfaz con graficas en PC. Se muestra un video que resume la implementacion de este ejercicio ->
+En esta practica se elabora un programa para realizar la lectura de los canales analogicos __ADC0__ y __ADC1__, y la lectura del estado que tiene el pulsador __SW1__. Las tareas se ejecutan de forma concurrente en el programa principal utilizando como base de tiempo la interrupcion del temporizador __T0__. Adicionalmente se envia por el puerto serie UART un mensaje con el resultado de la conversion ADC y estado del pulsador. La implementacion utiliza como fuente ADC un joystick de doble eje y como salida una interfaz con graficas en PC. Se muestra un video que resume la implementacion de este ejercicio -> https://youtu.be/8IlJ8GXfN9w
 
 ### - P04 - Controlador para Servomotor  [APSERVO]
 <p align="center">
   <img src="/images/ap4schm.png"></img>
 </p>
 
-Se elabora un programa que muestra como controlar la posicion de un servomotor __SG90__, donde el control de movimiento o posicion del eje servomotor se realiza con escala en porcentaje de 0% a 100%. Ademas se realiza la lectura de un sensor de distancia por ultrasonido __SR04__ para detectar la presencia de un objeto y desplazar una barra conectada el eje del sermovotor. El programa hace uso de la interrupcion del temporizador __T0__ para la ejecucion de tareas concurrentes dentro del programa principal y el temporizador __T2__ para la modulacion PWM del servomotor. Se muestra un video que resume la implementacion de este ejercicio ->
+Se elabora un programa que muestra como controlar la posicion de un servomotor __SG90__, donde el control de movimiento o posicion del eje servomotor se realiza con escala en porcentaje de 0% a 100%. Ademas se realiza la lectura de un sensor de distancia por ultrasonido __SR04__ para detectar la presencia de un objeto y desplazar una barra conectada el eje del sermovotor. El programa hace uso de la interrupcion del temporizador __T0__ para la ejecucion de tareas concurrentes dentro del programa principal y el temporizador __T2__ para la modulacion PWM del servomotor. Se muestra un video que resume la implementacion de este ejercicio -> (https://youtu.be/Tx3MUrLRV2k)
 
 ### - P05 - Control de Acceso Autorizado [APKEYPAS]
 <p align="center">
