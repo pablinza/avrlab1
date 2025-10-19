@@ -93,12 +93,12 @@ En esta practica se elabora un programa para realizar la lectura de los canales 
 
 Se elabora un programa que muestra como controlar la posicion de un servomotor __SG90__, donde el control de movimiento o posicion del eje servomotor se realiza con escala en porcentaje de 0% a 100%. Ademas se realiza la lectura de un sensor de distancia por ultrasonido __SR04__ para detectar la presencia de un objeto y desplazar una barra conectada el eje del sermovotor. El programa hace uso de la interrupcion del temporizador __T0__ para la ejecucion de tareas concurrentes dentro del programa principal y el temporizador __T2__ para la modulacion PWM del servomotor. Se muestra un video que resume la implementacion de este ejercicio -> (https://youtu.be/Tx3MUrLRV2k)
 
-### - P05 - Control de Acceso Autorizado [APKEYPAS]
+### - P05 - Control de Teclado con Pantalla LCD [APKEYPAS]
 <p align="center">
   <img src="/images/ap5schm.png"></img>
 </p>
 
-Programa que muestra el uso de un teclado matricial 3x4 para la lectura de una contraseña de cuatro digitos y proceder con su validacion, mostrando el resultado en una pantalla LCD 16x2. Durante el proceso la pantalla muestra el ingreso de los datos y un mensaje indicando si la contraseña fue aceptada o rechazada, permitiendo como maximo tres intentos antes de bloquear el acceso, que unicamente se restaura reiniciando el programa. Se utiliza el __T0__ como base de tiempo para la ejecucion de tareas concurrentes. Se muestra un video que resume la implementacion de este ejercicio ->
+Programa que muestra el uso de un teclado matricial 3x4 para la lectura de una contraseña de cuatro digitos y proceder con su validacion, mostrando el resultado en una pantalla LCD 16x2. Durante el proceso la pantalla muestra el ingreso de los datos y un mensaje indicando si la contraseña fue aceptada o rechazada, permitiendo como maximo tres intentos antes de bloquear el acceso, que unicamente se restaura reiniciando el programa. Se utiliza el __T0__ como base de tiempo para la ejecucion de tareas concurrentes. Se muestra un video que resume la implementacion de este ejercicio -> (https://youtu.be/O6bSSGe-Zgg)
 
  <br />
 Autor: Pablo Zarate, puedes contactarme a pablinza@me.com / pablinzte@gmail.com.  <br />
