@@ -56,11 +56,12 @@ void taskAPP(void) //Aplicacion Lectura teclado y muestra LCD
             res = KBScan(); //Lectura del Teclado
             if(res) //Si hay dato valido
             {
-                if(cnt++ > 99) //Espera confirmacion
+                if(cnt++ > 29) //Espera confirmacion
                 {
                     value = KBGetChar(res);//Recupera valor char
                     LCDWriteChar(value); //Escribe valor
                     pass[keycnt] = value; 
+                    cnt = 0;
                     state = 2;
                 }
             } else cnt = 0;
@@ -75,7 +76,11 @@ void taskAPP(void) //Aplicacion Lectura teclado y muestra LCD
             else state = 3;
             break;
         case 3: //Espera liberacion de teclado
-            if(!KBScan()) state = 1; //Si teclado es liberado
+            if(cnt > 199)
+            {
+                if(KBScan()==0) state = 1; //Si teclado es liberado    
+            }
+            else cnt++;
             break;
         case 4: //Compara password y valida
             LCDGotoXY(0,1);

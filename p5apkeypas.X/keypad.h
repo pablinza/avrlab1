@@ -1,10 +1,10 @@
  /*File:   keypad.h / keypad.c
  * Author: Pablo Zarate email:pablinza@me.com
- * Comments: Matrix 4x4 Keypad library for AVR
+ * Comments: Libreria de teclado Matricial para AVR
  * Port map for   Inputs --- Outputs
  * Keypad array [R1R2R3R4]  [C1C2C3C4]
- * Pull-up required for every inputs rows
- * Revision history: 25.08 */
+ * Se requiere Pull-up en las entradas filas (ROWS)
+ * Revision history: 25.8 */
 #ifndef XC_KEYPAD_H
 #define	XC_KEYPAD_H
 #include <xc.h>

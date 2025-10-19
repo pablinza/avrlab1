@@ -1,6 +1,6 @@
 /* File:   lcd.h / lcd.c
  * Author: Pablo Zarate email:pablinza@me.com
- * Comments: LCD single and multi line library for AVR
+ * Comments: Libreria de pantalla LCD para AVR
  * Designed for 4-bit mode operation pin map data D7:D4
  * Data Port can be Upper or Lower bits mode for LCD [D7:D4] 
  * LCD Pins RW RS RE will defined by user 
